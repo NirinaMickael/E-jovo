@@ -1,0 +1,22 @@
+$blue_color : rgb(5, 5, 148);
+$bg_blue : linear-gradient(to left,rgb(55, 116, 208),rgb(5, 63, 150));
+$title_size : 25px;
+$text_size :($title_size / 2);
+$white_color : rgb(255, 255, 255);
+$bg_grey : rgb(233, 233, 253);
+*{
+    padding: 0;
+    margin: 0;
+}
+.bg-blue{
+    background: $blue_color;
+}
+.text{
+    font-size: $text_size + 2px;
+}
+.title{
+    font-size: $title_size;
+}
+.outline-none{
+    outline: none;
+}

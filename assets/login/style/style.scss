@@ -1,0 +1,141 @@
+$blue_color : rgb(5, 5, 148);
+$bg_blue : linear-gradient(to left,rgb(55, 116, 208),rgb(5, 63, 150));
+$title_size : 25px;
+$text_size :($title_size / 2);
+$white_color : rgb(255, 255, 255);
+$bg_grey : rgb(233, 233, 253);
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+.title{
+    font-size: $title_size;
+}
+form{
+    input{
+        border-radius: 0% !important;
+        font-size: $text_size !important;
+        background: transparent !important;
+    }
+}
+.rule_white{
+    height: 4px;
+    background: $white_color;
+    border-radius: .4em;
+    margin: auto;
+}
+.b-radius{
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+}
+.y-hidden{
+    overflow-y: hidden !important;
+}
+.bg-blue{
+    background: $blue_color;
+}
+@media (max-width:375px) {
+    .text{
+        font-size: $text_size;
+    }
+    main{
+        height: fit-content;
+        padding: 3px !important;
+    } 
+    .header_container{
+        background-color: $bg_grey;
+        height: 200px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        transform: translateY(-35%);
+        z-index: -111;
+    }
+    .btn_blue{
+        background-color: $blue_color !important;
+        border-radius: 2em !important;
+        color: $white_color !important;
+        font-size:($title_size - 10px) !important; 
+        font-weight: 600 !important;
+        box-shadow: 2px 2px 3px rgb(85, 85, 172),
+                 inset  1px 1px 3px rgb(102, 153, 201) !important;
+        border: none;
+        &:hover{
+            background: red;
+        }
+    }
+    .container_form{
+        box-sizing: border-box;
+        box-shadow: 1px 1px 2px rgba(209, 203, 203, 0.789),
+                    -1px -1px 2px rgba(150, 147, 147, 0.857);;
+        margin-top: 2em;
+        background-color: $white_color;
+        height: 60vh;
+        .title_container{
+            margin-top: 2em;
+            position: absolute;
+            top: 0;
+            left: 0;
+            h1{
+                color: $blue_color;
+                font-size: $title_size - 7px;
+                font-weight: 600;
+            }
+        }
+        .form{
+            margin-top: 1em;
+            .form-control{
+                width: 95%;
+                margin: auto;
+            }
+        }
+    }
+    .card{
+        border-radius: 0;
+        background: $bg_blue;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        z-index: 444444;
+        height: 30vh;
+        .container{
+            .title{
+                font-size: $title_size - 20px;
+                color: $white_color;
+                font-weight: 6OO;
+            }
+        }
+        .rule_white{
+            width: 150px;
+        }
+    }
+//login page
+    .container-img{
+        transform: translateY(-20%);
+    }
+    .container-login{
+        background: $bg_blue;
+        height: 66.5vh;
+        padding: 0 3px;
+        transform: translateY(50%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        .title_login{
+            .title{
+                font-size: $title_size - 9px;
+                font-weight: bolder;
+            }
+        }
+        .rule_white{
+            width: 120px;
+        }
+        label{
+            position: absolute;
+            right: 0;
+        }
+    }
+}

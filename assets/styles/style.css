@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.bg-blue {
+  background: #050594;
+}
+
+.text {
+  font-size: 14.5px;
+}
+
+.title {
+  font-size: 25px;
+}
+
+.outline-none {
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */

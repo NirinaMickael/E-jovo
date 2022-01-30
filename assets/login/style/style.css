@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.title {
+  font-size: 25px;
+}
+
+form input {
+  border-radius: 0% !important;
+  font-size: 12.5px !important;
+  background: transparent !important;
+}
+
+.rule_white {
+  height: 4px;
+  background: white;
+  border-radius: .4em;
+  margin: auto;
+}
+
+.b-radius {
+  border-top-left-radius: 1.5em;
+  border-top-right-radius: 1.5em;
+}
+
+.y-hidden {
+  overflow-y: hidden !important;
+}
+
+.bg-blue {
+  background: #050594;
+}
+
+@media (max-width: 375px) {
+  .text {
+    font-size: 12.5px;
+  }
+  main {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 3px !important;
+  }
+  .header_container {
+    background-color: #e9e9fd;
+    height: 200px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    -webkit-transform: translateY(-35%);
+            transform: translateY(-35%);
+    z-index: -111;
+  }
+  .btn_blue {
+    background-color: #050594 !important;
+    border-radius: 2em !important;
+    color: white !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    -webkit-box-shadow: 2px 2px 3px #5555ac, inset 1px 1px 3px #6699c9 !important;
+            box-shadow: 2px 2px 3px #5555ac, inset 1px 1px 3px #6699c9 !important;
+    border: none;
+  }
+  .btn_blue:hover {
+    background: red;
+  }
+  .container_form {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 1px 1px 2px rgba(209, 203, 203, 0.789), -1px -1px 2px rgba(150, 147, 147, 0.857);
+            box-shadow: 1px 1px 2px rgba(209, 203, 203, 0.789), -1px -1px 2px rgba(150, 147, 147, 0.857);
+    margin-top: 2em;
+    background-color: white;
+    height: 60vh;
+  }
+  .container_form .title_container {
+    margin-top: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .container_form .title_container h1 {
+    color: #050594;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .container_form .form {
+    margin-top: 1em;
+  }
+  .container_form .form .form-control {
+    width: 95%;
+    margin: auto;
+  }
+  .card {
+    border-radius: 0;
+    background: -webkit-gradient(linear, right top, left top, from(#3774d0), to(#053f96));
+    background: linear-gradient(to left, #3774d0, #053f96);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    z-index: 444444;
+    height: 30vh;
+  }
+  .card .container .title {
+    font-size: 5px;
+    color: white;
+    font-weight: 6OO;
+  }
+  .card .rule_white {
+    width: 150px;
+  }
+  .container-img {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  .container-login {
+    background: -webkit-gradient(linear, right top, left top, from(#3774d0), to(#053f96));
+    background: linear-gradient(to left, #3774d0, #053f96);
+    height: 66.5vh;
+    padding: 0 3px;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .container-login .title_login .title {
+    font-size: 16px;
+    font-weight: bolder;
+  }
+  .container-login .rule_white {
+    width: 120px;
+  }
+  .container-login label {
+    position: absolute;
+    right: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
