@@ -9,15 +9,17 @@
     <title>Signup page</title>
 </head>
 <body>
-    <?php require('../php/function.php')?>
-    <?= header_page()?>
-   <main class="container-fluid ">
-       <a href="login.php" class="btn btn_blue">login</a>
+<?php
+     require('../php/function.php');
+     $href = ['.../index.php','./about/about.php','./blog/blog.php','login.php'];
+    ?>
+    <?= header_page($href)?>
+   <main class="container-fluid h-100">
        <div class="header_container container-fluid p-0"></div>
-       <div class="container_form  b-radius container-fluid d-grid p-0">
+       <div class="container_form  d-grid b-radius container-fluid d-grid p-0">
            <div class="form">
-            <div class="container-fluid title_container"><h1 class="text-center title">SIGN UP</h1></div>
                <form action="" class="form">
+               <div class="container-fluid title_container"><h1 class="text-center title">SIGN UP</h1></div>
                    <div class="form-group my-2">
                        <input type="text" name="username" id="username" placeholder="Userame" class="pt-2  form-control">
                    </div>
@@ -39,12 +41,13 @@
                </form>
            </div>
        </div>
-       <div class="card b-radius">
-            <div class="container-fluid mt-3"><h2 class="title text-center text-light">ARE YOU A DOCTOR?</h2></div>
-            <div class="container"><h4 class="text text-center text-light">More than 10 million patients searching for you</h4></div>
-            <div class="container-fluid d-flex justify-content-center my-2"><button class="btn btn_blue col-5">Join Now</button></div>
-            <div class="rule_white"></div>
-       </div>
+       <div class="Card b-radius">
+                <div class="container-fluid mt-2"><h2 class="title text-center text-light">ARE YOU A *******?</h2></div>
+                <div class="container"><h4 class="text text-center text-light">More than 10 million *** searching for you</h4></div>
+                <div class="container-fluid d-flex justify-content-center mt-1"><button class="btn btn_blue col-5">Join Now</button></div>
+                <div class="rule_white mt-1"></div>
+        </div>
    </main>
+   <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

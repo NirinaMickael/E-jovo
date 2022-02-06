@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
 }
 
 .bg-blue {
@@ -17,5 +18,45 @@
 
 .outline-none {
   outline: none;
+}
+
+main {
+  height: 100vh;
+}
+
+@media (max-width: 375px) {
+  .text-content {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+  }
+  .text-content h1 {
+    font-size: 30px;
+  }
+  .text-content h1 span {
+    font-size: 45px;
+    color: #050594;
+  }
+  .container-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 275px) {
+  .text-content {
+    top: 130px;
+  }
+  .text-content h1 {
+    font-size: 27px;
+  }
+  .text-content h1 span {
+    font-size: 39px;
+  }
+  .container-img {
+    position: absolute;
+  }
 }
 /*# sourceMappingURL=style.css.map */

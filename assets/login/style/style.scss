@@ -9,7 +9,15 @@ $bg_grey : rgb(233, 233, 253);
     margin: 0;
     font-family: sans-serif;
     overflow-x: hidden;
+    transition: all .2s cubic-bezier(0.05, 0.2, 0.235, 1);
 }
+body{
+    height: 95vh;
+}
+main{
+    height: fit-content;
+    padding: 3px !important;
+} 
 .title{
     font-size: $title_size;
 }
@@ -36,6 +44,59 @@ form{
 .bg-blue{
     background: $blue_color;
 }
+.btn_blue{
+    background-color: $blue_color !important;
+    border-radius: 2em !important;
+    color: $white_color !important;
+    font-size:($title_size - 10px) !important; 
+    font-weight: 600 !important;
+    box-shadow: 2px 2px 3px rgb(85, 85, 172),
+             inset  1px 1px 3px rgb(102, 153, 201) !important;
+    border: none;
+    &:hover{
+        background: red;
+    }
+}
+/*Container form*/
+.container_form{
+    box-sizing: border-box;
+    box-shadow: 1px 1px 2px rgba(209, 203, 203, 0.789),
+                -1px -1px 2px rgba(150, 147, 147, 0.857);;
+    margin-top: 2em;
+    background-color: $white_color;
+    height: 60vh;
+    .title_container{
+        h1{
+            color: $blue_color;
+            font-size: $title_size - 7px;
+            font-weight: 600;
+        }
+    }
+    .form{
+        margin-top: 1em;
+        .form-control{
+            width: 95%;
+            margin: auto;
+        }
+    }
+}
+/*container login*/
+.container-login{
+    height: 100%;
+    .title_login{
+        .title{
+            font-size: $title_size - 9px;
+            font-weight: bolder;
+        }
+    }
+    .rule_white{
+        width: 120px;
+    }
+    label{
+        position: absolute;
+        right: 0;
+    }
+}
 @media (max-width:375px) {
     .text{
         font-size: $text_size;
@@ -44,6 +105,64 @@ form{
         height: fit-content;
         padding: 3px !important;
     } 
+    .container_form{
+        margin-top: 2em;
+        .title_container{
+            margin-top: 0;
+            h1{
+                font-size: $title_size - 7px;
+            }
+        }
+        .form{
+            margin-top: 1em;
+        }
+    }
+    .Card{
+        height: 30%;
+        .container-fluid{
+            .title{
+                font-size: $title_size - 3px !important;
+            }
+        }
+        .rule_white{
+            width: 150px;
+        }
+    }
+//login page
+    .down{
+        height: 60vh !important;
+        transform: translateY(65%) !important;
+    }
+    .login{
+        background: $bg_blue;
+        height: 66.5vh;
+        padding: 0 3px;
+        transform: translateY(50%);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .container-login{
+        height: 100%;
+        .title_login{
+            .title{
+                font-size: $title_size - 9px;
+                font-weight: bolder;
+            }
+        }
+        .rule_white{
+            width: 120px;
+        }
+        label{
+            position: absolute;
+            right: 0;
+        }
+    }
+}
+@media (max-width:575px) {
+    .text{
+        font-size: $text_size;
+    }
     .header_container{
         background-color: $bg_grey;
         height: 200px;
@@ -53,34 +172,16 @@ form{
         transform: translateY(-35%);
         z-index: -111;
     }
-    .btn_blue{
-        background-color: $blue_color !important;
-        border-radius: 2em !important;
-        color: $white_color !important;
-        font-size:($title_size - 10px) !important; 
-        font-weight: 600 !important;
-        box-shadow: 2px 2px 3px rgb(85, 85, 172),
-                 inset  1px 1px 3px rgb(102, 153, 201) !important;
-        border: none;
-        &:hover{
-            background: red;
-        }
-    }
     .container_form{
-        box-sizing: border-box;
         box-shadow: 1px 1px 2px rgba(209, 203, 203, 0.789),
                     -1px -1px 2px rgba(150, 147, 147, 0.857);;
-        margin-top: 2em;
+        margin-top: 4em;
         background-color: $white_color;
-        height: 60vh;
+        height:67vh;
         .title_container{
-            margin-top: 2em;
-            position: absolute;
-            top: 0;
-            left: 0;
             h1{
                 color: $blue_color;
-                font-size: $title_size - 7px;
+                font-size: $title_size - 5px;
                 font-weight: 600;
             }
         }
@@ -92,18 +193,16 @@ form{
             }
         }
     }
-    .card{
-        border-radius: 0;
-        background: $bg_blue;
+    .Card{
         position: absolute;
+        bottom: 0;
         left: 0;
-        right: 0;
-        bottom: 10px;
-        z-index: 444444;
-        height: 30vh;
-        .container{
+        right:0;
+        background: $bg_blue;
+        height:25%;
+        .container-fluid{
             .title{
-                font-size: $title_size - 20px;
+                font-size: $title_size !important;
                 color: $white_color;
                 font-weight: 6OO;
             }
@@ -113,10 +212,11 @@ form{
         }
     }
 //login page
-    .container-img{
-        transform: translateY(-20%);
+    .down{
+        height: 60vh !important;
+        transform: translateY(65%) !important;
     }
-    .container-login{
+    .login{
         background: $bg_blue;
         height: 66.5vh;
         padding: 0 3px;
@@ -124,6 +224,9 @@ form{
         position: absolute;
         top: 0;
         left: 0;
+    }
+    .container-login{
+        height: 100%;
         .title_login{
             .title{
                 font-size: $title_size - 9px;
